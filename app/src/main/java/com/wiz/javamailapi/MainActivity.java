@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         try {
-                            MailSender sender = new MailSender("testminet@gmail.com",
-                                    "minet2019");
+                            MailSender sender = new MailSender("your_user_email",
+                                    "your_password");
                             sender.sendMail("This is a test subject", "This is the test body content",
-                                    "testminet@gmail.com", "samnjoroge6035@gmail.com");
+                                    "your_user_email", "email_being_sent_to");
 
                             Toast.makeText(MainActivity.this, "SUCCESS", Toast.LENGTH_SHORT).show();
                             please_wait.hide();
